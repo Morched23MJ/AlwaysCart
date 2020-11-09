@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/IdeaProjects.iml" filepath="$PROJECT_DIR$/.idea/IdeaProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/delivery/delivery.iml" filepath="$PROJECT_DIR$/delivery/delivery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order/demo.iml" filepath="$PROJECT_DIR$/order/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/catalog/demo (1) (com.catalog).iml" filepath="$PROJECT_DIR$/catalog/demo (1) (com.catalog).iml" />
+      <module fileurl="file://$PROJECT_DIR$/config/demo (1) (com.config).iml" filepath="$PROJECT_DIR$/config/demo (1) (com.config).iml" />
+      <module fileurl="file://$PROJECT_DIR$/discovery/demo (1) (com.discovery).iml" filepath="$PROJECT_DIR$/discovery/demo (1) (com.discovery).iml" />
+      <module fileurl="file://$PROJECT_DIR$/inventory/demo (1) (com.inventory).iml" filepath="$PROJECT_DIR$/inventory/demo (1) (com.inventory).iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
+    </modules>
+  </component>
+</project>
