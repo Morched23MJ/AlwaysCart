@@ -15,6 +15,9 @@ public interface OrderClient {
     @PostMapping("/api/confirm")
     Object confirmOrder(@RequestBody Delivery delivery);
 
+    @PostMapping("/api/pend")
+    Object pendOrder(@RequestBody Delivery delivery);
+
     @GetMapping("/api/orders")
     List<Object> getOrders();
 }

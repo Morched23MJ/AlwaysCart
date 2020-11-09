@@ -21,11 +21,39 @@ public class ProductController {
 
     @GetMapping("/products/{id}")
     public Product getProduct(@PathVariable("id") Long id) {
-        return productRepository.findById(id).get();
+        try {
+            return productRepository.findById(id).get();
+        } catch (Exception e) {
+            return null;
+        }
     }
 
     @PostMapping("/products")
     public Product saveProduct(@RequestBody Product product) {
         return productRepository.save(product);
+    }
+
+    @PutMapping("/products/{id}")
+    public Product updateProduct(@PathVariable("id") Long id, @RequestBody Product update) {
+        return productRepository.findById(id)
+                .map(product -> {
+                    product.setName(update.getName());
+                    product.setBrand(update.getBrand());
+                    product.setSupplier(update.getSupplier());
+                    return productRepository.save(product);
+                })
+                .orElseGet(() -> {
+                    return productRepository.save(update);
+                });
+    }
+
+    @DeleteMapping("/products/{id}")
+    public void saveProduct(@PathVariable("id") Long id) {
+        try {
+            Product product = productRepository.findById(id).get();
+            productRepository.delete(product);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
 }

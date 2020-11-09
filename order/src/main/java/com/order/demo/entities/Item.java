@@ -15,5 +15,4 @@ public class Item {
     private int quantity;
     @Embedded
     private Product product;
-
 }
